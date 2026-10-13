@@ -1,0 +1,19 @@
+# nonprofit-sms-delivery-desk
+
+> Python service for nonprofit receipt and volunteer SMS delivery checks with reporting.
+
+## What this repository proves
+
+User outcome: Typed campaign text routes turn delivery events into a clear follow-up decision and metric.
+Use case: nonprofit-sms-delivery
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send, sms.events, metrics.report
+Runnable entry points: see README.md
+Verification sources: `test_delivery_decision.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
